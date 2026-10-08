@@ -69,3 +69,17 @@ Raw Data → Quality Audit → Transformation → KPI Analysis → Signal Genera
 - Tableau-ready analytical outputs
 - AI-generated management summary with reporting guardrails
 - Automated checks to validate AI output structure, wording and selected numeric values
+
+- ## Repository Structure
+
+```text
+retailpulse-ai/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── notebooks/
+│   └── retailpulse_ai_analysis.ipynb
+├── reports/
+│   ├── ai_management_summary.txt
+│   └── ai_validation_results.csv
+└── README.md
