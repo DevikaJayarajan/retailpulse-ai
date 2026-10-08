@@ -161,9 +161,30 @@ Key controls include:
 
 This approach demonstrates how generative AI can support analytics communication while keeping the underlying calculations deterministic and auditable.
 
+## Future Improvements
+
+Potential extensions include:
+
+- Adding demographic and socioeconomic data to strengthen location analysis
+- Incorporating competitor locations and proximity measures
+- Adding rental or commercial property data for deeper site evaluation
+- Automating scheduled data refreshes and reporting
+- Expanding the AI reporting layer into a repeatable stakeholder briefing workflow
+- Deploying the analytical pipeline using cloud-based data and automation tools
+
 The City of Melbourne hourly pedestrian counts file is not stored in this repository because it is approximately 120 MB.
 
 Download the source file separately and place it in:
 
 ```text
 data/raw/City of Melbourne Pedestrian Counting System/
+
+## Author
+
+**Devika Jayaraj**  
+Master of Data Science, RMIT University  
+Melbourne, Australia
+
+Interested in Data Analytics, Business Intelligence, Data Engineering and AI-enabled analytics.
+
+Connect with me on LinkedIn: [linkedin.com/in/devika-jayaraj]
