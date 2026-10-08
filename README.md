@@ -132,3 +132,21 @@ Market and location evidence are treated as independent signals and brought toge
 - Some pedestrian sensors have incomplete historical coverage, so year-on-year comparisons are only used when both the current and prior-year periods meet the defined coverage threshold.
 - Priority labels are analytical decision-support signals designed to identify areas that warrant further commercial investigation.
 - External factors such as demographics, competition, rent, store economics and local trading conditions would need to be incorporated before making a real investment decision.
+
+- ## How to Run the Project
+
+1. Clone or download this repository.
+2. Open `notebooks/retailpulse_ai_analysis.ipynb`.
+3. Ensure the required Python libraries are installed.
+4. Place the required raw data files in the corresponding folders under `data/raw/`.
+5. Run the notebook from top to bottom.
+6. Generated analytical outputs will be saved under `data/processed/` and `reports/`.
+
+### Required External Raw File
+
+The City of Melbourne hourly pedestrian counts file is not stored in this repository because it is approximately 120 MB.
+
+Download the source file separately and place it in:
+
+```text
+data/raw/City of Melbourne Pedestrian Counting System/
