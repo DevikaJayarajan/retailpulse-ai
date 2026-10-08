@@ -38,3 +38,21 @@ These datasets are used to analyse pedestrian activity, location-level growth, f
 Spending and pedestrian datasets are analysed separately and combined only at the decision-support stage.
 
 The analysis does not claim that spending changes cause pedestrian changes, or that pedestrian activity directly represents store sales.
+
+## Project Workflow
+
+The project follows an end-to-end analytics workflow:
+
+1. Raw data collection
+2. Data quality audit
+3. Data transformation
+4. KPI analysis
+5. Market and location signal generation
+6. Decision-priority scoring
+7. Tableau-ready dataset creation
+8. AI-assisted management reporting
+9. Automated validation of AI outputs
+
+### Analytical Flow
+
+Raw Data → Quality Audit → Transformation → KPI Analysis → Signal Generation → Decision Priorities → Tableau-ready Outputs → AI Reporting & Validation
