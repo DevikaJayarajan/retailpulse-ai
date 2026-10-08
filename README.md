@@ -108,3 +108,18 @@ The outputs are designed to support further commercial investigation rather than
 - OpenAI API
 - CSV / Excel data processing
 - GitHub
+
+- ## Key Findings
+
+### Market Signals
+- Victoria showed strong year-on-year growth across several household spending categories in the latest reporting period.
+- Categories such as Miscellaneous goods and services, Clothing and footwear, and Food were identified as high-priority areas for further commercial investigation.
+- Strong growth alone was not treated as sufficient evidence; Victoria's performance was also compared with Australia to provide broader context.
+
+### Location Signals
+- Several Melbourne pedestrian locations showed strong validated year-on-year growth while also maintaining meaningful footfall volumes.
+- Locations were prioritised using both growth and activity scale rather than ranking solely by percentage growth.
+- Coverage validation was applied before year-on-year comparisons to reduce the risk of misleading signals caused by incomplete sensor observations.
+
+### Decision Intelligence
+Market and location evidence are treated as independent signals and brought together only at the decision-support stage. The outputs identify where further commercial investigation may be warranted rather than making direct store-opening or investment recommendations.
