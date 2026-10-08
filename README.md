@@ -83,3 +83,17 @@ retailpulse-ai/
 │   ├── ai_management_summary.txt
 │   └── ai_validation_results.csv
 └── README.md
+```
+## Project Outputs
+
+The project produces the following decision-support outputs:
+
+- `spending_kpis.csv` — spending growth and trend metrics
+- `spending_comparison.csv` — Victoria vs Australia category comparison
+- `latest_market_priorities.csv` — latest market signals and investigation priorities
+- `pedestrian_kpis.csv` — location-level pedestrian KPIs
+- `latest_location_priorities.csv` — latest validated location signals and priorities
+- `ai_management_summary.txt` — AI-assisted management summary
+- `ai_validation_results.csv` — automated checks used to validate the AI-generated summary
+
+The outputs are designed to support further commercial investigation rather than direct store-opening or investment decisions.
