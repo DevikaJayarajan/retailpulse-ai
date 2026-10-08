@@ -97,3 +97,14 @@ The project produces the following decision-support outputs:
 - `ai_validation_results.csv` — automated checks used to validate the AI-generated summary
 
 The outputs are designed to support further commercial investigation rather than direct store-opening or investment decisions.
+
+## Tech Stack
+
+- Python
+- Pandas
+- NumPy
+- Jupyter Notebook
+- Tableau
+- OpenAI API
+- CSV / Excel data processing
+- GitHub
