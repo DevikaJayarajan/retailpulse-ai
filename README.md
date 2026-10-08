@@ -56,3 +56,16 @@ The project follows an end-to-end analytics workflow:
 ### Analytical Flow
 
 Raw Data → Quality Audit → Transformation → KPI Analysis → Signal Generation → Decision Priorities → Tableau-ready Outputs → AI Reporting & Validation
+
+## Key Features
+
+- Automated cleaning and transformation of ABS household spending data
+- Validation of monthly time-series continuity and missing values
+- Comparison of Victoria household spending growth against Australia
+- Exact calendar-month matching for pedestrian month-on-month and year-on-year analysis
+- Sensor coverage validation to avoid misleading pedestrian growth calculations
+- Market and location signal generation using defined business rules
+- Priority scoring for further commercial investigation
+- Tableau-ready analytical outputs
+- AI-generated management summary with reporting guardrails
+- Automated checks to validate AI output structure, wording and selected numeric values
