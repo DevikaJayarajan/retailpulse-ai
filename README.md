@@ -144,6 +144,23 @@ Market and location evidence are treated as independent signals and brought toge
 
 ### Required External Raw File
 
+## AI-Assisted Reporting & Validation
+
+The project includes an AI-assisted reporting layer that converts validated analytical outputs into a concise management summary.
+
+The AI component is intentionally used as a reporting layer rather than as the source of calculations or KPI logic.
+
+Key controls include:
+
+- Only validated market and location outputs are provided to the AI
+- The prompt explicitly prevents invented calculations and causal claims
+- Market and pedestrian evidence are treated as independent evidence streams
+- The AI is instructed not to make direct store-opening recommendations
+- Automated checks verify required sections, wording constraints and selected numeric values
+- A fallback management summary is available if the API call is unavailable
+
+This approach demonstrates how generative AI can support analytics communication while keeping the underlying calculations deterministic and auditable.
+
 The City of Melbourne hourly pedestrian counts file is not stored in this repository because it is approximately 120 MB.
 
 Download the source file separately and place it in:
