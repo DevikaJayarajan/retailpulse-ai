@@ -123,3 +123,12 @@ The outputs are designed to support further commercial investigation rather than
 
 ### Decision Intelligence
 Market and location evidence are treated as independent signals and brought together only at the decision-support stage. The outputs identify where further commercial investigation may be warranted rather than making direct store-opening or investment recommendations.
+
+## Limitations
+
+- Household spending and pedestrian activity are separate datasets with different geographic and time structures.
+- The analysis does not assume that changes in pedestrian activity cause changes in spending, or vice versa.
+- Pedestrian counts represent activity around sensor locations and should not be interpreted as store-level sales or customer conversion.
+- Some pedestrian sensors have incomplete historical coverage, so year-on-year comparisons are only used when both the current and prior-year periods meet the defined coverage threshold.
+- Priority labels are analytical decision-support signals designed to identify areas that warrant further commercial investigation.
+- External factors such as demographics, competition, rent, store economics and local trading conditions would need to be incorporated before making a real investment decision.
