@@ -70,7 +70,7 @@ Raw Data → Quality Audit → Transformation → KPI Analysis → Signal Genera
 - AI-generated management summary with reporting guardrails
 - Automated checks to validate AI output structure, wording and selected numeric values
 
-- ## Repository Structure
+## Repository Structure
 
 ```text
 retailpulse-ai/
@@ -109,7 +109,7 @@ The outputs are designed to support further commercial investigation rather than
 - CSV / Excel data processing
 - GitHub
 
-- ## Key Findings
+## Key Findings
 
 ### Market Signals
 - Victoria showed strong year-on-year growth across several household spending categories in the latest reporting period.
@@ -133,7 +133,7 @@ Market and location evidence are treated as independent signals and brought toge
 - Priority labels are analytical decision-support signals designed to identify areas that warrant further commercial investigation.
 - External factors such as demographics, competition, rent, store economics and local trading conditions would need to be incorporated before making a real investment decision.
 
-- ## How to Run the Project
+## How to Run the Project
 
 1. Clone or download this repository.
 2. Open `notebooks/retailpulse_ai_analysis.ipynb`.
@@ -144,6 +144,17 @@ Market and location evidence are treated as independent signals and brought toge
 
 ### Required External Raw File
 
+The City of Melbourne hourly pedestrian counts file is not stored in this repository because it is approximately 120 MB.
+
+Download:
+
+`pedestrian-counting-system-monthly-counts-per-hour.csv`
+
+and place it in:
+
+```text
+data/raw/City of Melbourne Pedestrian Counting System/
+```
 ## AI-Assisted Reporting & Validation
 
 The project includes an AI-assisted reporting layer that converts validated analytical outputs into a concise management summary.
@@ -172,13 +183,6 @@ Potential extensions include:
 - Expanding the AI reporting layer into a repeatable stakeholder briefing workflow
 - Deploying the analytical pipeline using cloud-based data and automation tools
 
-The City of Melbourne hourly pedestrian counts file is not stored in this repository because it is approximately 120 MB.
-
-Download the source file separately and place it in:
-
-```text
-data/raw/City of Melbourne Pedestrian Counting System/
-
 ## Author
 
 **Devika Jayaraj**  
@@ -187,4 +191,4 @@ Melbourne, Australia
 
 Interested in Data Analytics, Business Intelligence, Data Engineering and AI-enabled analytics.
 
-Connect with me on LinkedIn: [linkedin.com/in/devika-jayaraj]
+Connect with me on LinkedIn: [linkedin.com/in/devika-jayaraj](https://www.linkedin.com/in/devika-jayaraj)
