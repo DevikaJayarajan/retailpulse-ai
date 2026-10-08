@@ -11,6 +11,17 @@ The project covers:
 - Tableau-ready datasets and dashboards
 - AI-assisted management reporting with validation guardrails
 
+## Dashboard Preview
+
+### Market Overview
+![Market Overview](tableau/market_overview.png)
+
+### Location Intelligence
+![Location Intelligence](tableau/location_intelligence.png)
+
+### Decision Intelligence
+![Decision Intelligence](tableau/decision_intelligence.png)
+
 ## Business Question
 
 How can a retail strategy team combine Australian consumer-spending trends with Melbourne pedestrian activity to identify emerging demand patterns, prioritise categories and locations for further investigation, and automate part of the recurring market-review process using AI?
