@@ -1,6 +1,4 @@
-Yes — here’s the **full cleaned README** I’d use now. I’ve incorporated the updated contents list, interactive Tableau link, source credits, current folder structure, AI guardrail details, and the top-level summary. The opening findings are supported by your current README content. Pasted text
 
-```markdown
 # RetailPulse AI
 
 RetailPulse AI is an end-to-end retail decision-intelligence project combining Australian household spending data with Melbourne pedestrian activity to identify market signals and priority locations for further commercial investigation.
