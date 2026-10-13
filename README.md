@@ -60,17 +60,14 @@ This project uses publicly available Australian government and City of Melbourne
 
 ### Australian Bureau of Statistics
 
-- [Monthly Household Spending Indicator](https://www.abs.gov.au/statistics/economy/finance/monthly-household-spending-indicator) — Australian Bureau of Statistics
-- Australia and Victoria household spending data cubes were used to analyse category-level spending trends, growth rates and Victoria's performance relative to Australia.
+- [Monthly Household Spending Indicator — July 2026](https://www.abs.gov.au/statistics/economy/finance/monthly-household-spending-indicator/jul-2026#data-downloads) — Australian Bureau of Statistics
 
 Source credit: **Australian Bureau of Statistics (ABS), Monthly Household Spending Indicator.**
 
 ### City of Melbourne
 
-- [Pedestrian Counting System (counts per hour)](https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-monthly-counts-per-hour/) — City of Melbourne Open Data
-- [Pedestrian Counting System - Sensor Locations](https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-sensor-locations/) — City of Melbourne Open Data
-
-These datasets were used to analyse pedestrian activity, location-level growth, footfall volume and sensor metadata.
+- [Pedestrian Counting System — Counts per Hour](https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-monthly-counts-per-hour/export/) — City of Melbourne Open Data
+- [Pedestrian Counting System — Sensor Locations](https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-sensor-locations/export/) — City of Melbourne Open Data
 
 Source credit: **City of Melbourne Open Data, Pedestrian Counting System.**
 
