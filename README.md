@@ -277,6 +277,4 @@ Melbourne, Australia
 Interested in Data Analytics, Business Intelligence, Data Engineering and AI-enabled analytics.
 
 Connect with me on LinkedIn: [linkedin.com/in/devika-jayaraj](https://www.linkedin.com/in/devika-jayaraj)
-```
 
-This is the version I’d use now.
