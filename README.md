@@ -2,6 +2,13 @@
 
 RetailPulse AI is an end-to-end retail decision-intelligence project combining Australian household spending data with Melbourne pedestrian activity to identify market signals and priority locations for further commercial investigation.
 
+## Executive Summary
+
+- **Clothing and footwear, Food, and Miscellaneous goods and services** were identified as the strongest **High Priority market categories** in the latest reporting period.
+- **Little Collins St-Swanston St (East)** was one of the strongest High Priority location signals, combining approximately **643,499 monthly pedestrian movements** with **20.55% validated YoY growth**.
+- **Recreation and culture** recorded the fastest Victorian category growth at approximately **9.05% YoY**, but remained **Medium Priority** because Victoria underperformed Australia by approximately **1.76 percentage points**.
+- The outputs are intended to identify areas that **warrant further commercial investigation**, rather than make direct store-opening or investment recommendations.
+
 The project covers:
 
 - Australian Bureau of Statistics household spending analysis
@@ -14,12 +21,15 @@ The project covers:
 ## Dashboard Preview
 
 ### Market Overview
+
 ![Market Overview](tableau/market_overview.png)
 
 ### Location Intelligence
+
 ![Location Intelligence](tableau/location_intelligence.png)
 
 ### Decision Intelligence
+
 ![Decision Intelligence](tableau/decision_intelligence.png)
 
 ## Business Question
@@ -31,12 +41,14 @@ How can a retail strategy team combine Australian consumer-spending trends with 
 This project uses publicly available Australian government and City of Melbourne datasets.
 
 ### Australian Bureau of Statistics
+
 - Monthly Household Spending Indicator — Australia
 - Monthly Household Spending Indicator — Victoria
 
 These datasets are used to analyse household spending trends, growth rates and Victoria's performance relative to Australia.
 
 ### City of Melbourne
+
 - Pedestrian Counting System — Monthly Counts per Hour
 - Pedestrian Counting System — Sensor Locations
 
@@ -62,7 +74,7 @@ The project follows an end-to-end analytics workflow:
 6. Decision-priority scoring
 7. Tableau-ready dataset creation
 8. AI-assisted management reporting
-9. Automated validation of AI outputs
+9. Automated validation of reporting outputs
 
 ### Analytical Flow
 
@@ -74,12 +86,13 @@ Raw Data → Quality Audit → Transformation → KPI Analysis → Signal Genera
 - Validation of monthly time-series continuity and missing values
 - Comparison of Victoria household spending growth against Australia
 - Exact calendar-month matching for pedestrian month-on-month and year-on-year analysis
-- Sensor coverage validation to avoid misleading pedestrian growth calculations
+- Sensor coverage validation to reduce misleading pedestrian growth calculations
 - Market and location signal generation using defined business rules
 - Priority scoring for further commercial investigation
 - Tableau-ready analytical outputs
-- AI-generated management summary with reporting guardrails
-- Automated checks to validate AI output structure, wording and selected numeric values
+- AI-assisted management reporting with validation guardrails
+- Automated checks to validate report structure, prohibited recommendation language and numeric values directly against validated analytical tables
+- Guardrail stress test using a deliberately unsafe store-opening recommendation to confirm that unsupported recommendations are detected
 
 ## Repository Structure
 
@@ -87,6 +100,8 @@ Raw Data → Quality Audit → Transformation → KPI Analysis → Signal Genera
 retailpulse-ai/
 ├── data/
 │   ├── raw/
+│   │   ├── ABS Monthly Household Spending Indicator/
+│   │   └── City of Melbourne Pedestrian Counting System/
 │   └── processed/
 ├── notebooks/
 │   └── retailpulse_ai_analysis.ipynb
@@ -98,20 +113,25 @@ retailpulse-ai/
 │   ├── market_overview.png
 │   ├── location_intelligence.png
 │   └── decision_intelligence.png
+├── .gitignore
 ├── README.md
 └── requirements.txt
 ```
+
 ## Project Outputs
 
 The project produces the following decision-support outputs:
 
-- `spending_kpis.csv` — spending growth and trend metrics
-- `spending_comparison.csv` — Victoria vs Australia category comparison
-- `latest_market_priorities.csv` — latest market signals and investigation priorities
-- `pedestrian_kpis.csv` — location-level pedestrian KPIs
-- `latest_location_priorities.csv` — latest validated location signals and priorities
-- `ai_management_summary.txt` — AI-assisted management summary
-- `ai_validation_results.csv` — automated checks used to validate the AI-generated summary
+- `data/processed/abs_spending_long.csv` — transformed ABS spending data in long format
+- `data/processed/pedestrian_monthly_location.csv` — monthly pedestrian activity by location
+- `data/processed/spending_kpis.csv` — spending growth and trend metrics
+- `data/processed/spending_comparison.csv` — Victoria vs Australia category comparison
+- `data/processed/latest_market_priorities.csv` — latest market signals and investigation priorities
+- `data/processed/pedestrian_kpis.csv` — location-level pedestrian KPIs
+- `data/processed/latest_location_priorities.csv` — latest validated location signals and priorities
+- `reports/ai_management_summary.txt` — AI-assisted management summary
+- `reports/ai_validation_results.csv` — wording and numerical validation results for the current management summary
+- `reports/ai_guardrail_test_results.csv` — deliberate unsafe-summary guardrail test results
 
 The outputs are designed to support further commercial investigation rather than direct store-opening or investment decisions.
 
@@ -129,23 +149,31 @@ The outputs are designed to support further commercial investigation rather than
 ## Key Findings
 
 ### Market Signals
+
 - Victoria showed strong year-on-year growth across several household spending categories in the latest reporting period.
-- Categories such as Miscellaneous goods and services, Clothing and footwear, and Food were identified as high-priority areas for further commercial investigation.
-- Strong growth alone was not treated as sufficient evidence; Victoria's performance was also compared with Australia to provide broader context.
+- **Miscellaneous goods and services, Clothing and footwear, and Food** were classified as High Priority market categories.
+- **Recreation and culture** recorded the strongest Victorian YoY growth at approximately **9.05%**, but remained Medium Priority because Victoria was approximately **1.76 percentage points below Australia** on the same YoY comparison.
+- Strong growth alone was therefore not treated as sufficient evidence; Victoria's performance relative to Australia was also used as part of the priority logic.
 
 ### Location Signals
+
 - Several Melbourne pedestrian locations showed strong validated year-on-year growth while also maintaining meaningful footfall volumes.
+- **Little Collins St-Swanston St (East)** recorded approximately **643,499 monthly pedestrian movements** and **20.55% validated YoY growth**, making it one of the strongest High Priority location signals.
+- **Collins Street (North)** and **iHub 489 Elizabeth Street** were also classified as High Priority location signals.
 - Locations were prioritised using both growth and activity scale rather than ranking solely by percentage growth.
-- Coverage validation was applied before year-on-year comparisons to reduce the risk of misleading signals caused by incomplete sensor observations.
+- Sensor coverage validation was applied before year-on-year comparisons to reduce the risk of misleading signals caused by incomplete observations.
 
 ### Decision Intelligence
-Market and location evidence are treated as independent signals and brought together only at the decision-support stage. The outputs identify where further commercial investigation may be warranted rather than making direct store-opening or investment recommendations.
+
+Market and location evidence are treated as independent signals and brought together only at the decision-support stage.
+
+The outputs identify where further commercial investigation may be warranted rather than making direct store-opening or investment recommendations.
 
 ## Limitations
 
 - Household spending and pedestrian activity are separate datasets with different geographic and time structures.
 - The analysis does not assume that changes in pedestrian activity cause changes in spending, or vice versa.
-- Pedestrian counts represent activity around sensor locations and should not be interpreted as store-level sales or customer conversion.
+- Pedestrian counts represent activity around sensor locations and should not be interpreted as store-level sales, customer conversion or profitability.
 - Some pedestrian sensors have incomplete historical coverage, so year-on-year comparisons are only used when both the current and prior-year periods meet the defined coverage threshold.
 - Priority labels are analytical decision-support signals designed to identify areas that warrant further commercial investigation.
 - External factors such as demographics, competition, rent, store economics and local trading conditions would need to be incorporated before making a real investment decision.
@@ -154,7 +182,12 @@ Market and location evidence are treated as independent signals and brought toge
 
 1. Clone or download this repository.
 2. Open `notebooks/retailpulse_ai_analysis.ipynb`.
-3. Ensure the required Python libraries are installed.
+3. Install the required libraries using:
+
+```bash
+pip install -r requirements.txt
+```
+
 4. Place the required raw data files in the corresponding folders under `data/raw/`.
 5. Run the notebook from top to bottom.
 6. Generated analytical outputs will be saved under `data/processed/` and `reports/`.
@@ -172,6 +205,7 @@ and place it in:
 ```text
 data/raw/City of Melbourne Pedestrian Counting System/
 ```
+
 ## AI-Assisted Reporting & Validation
 
 The project includes an AI-assisted reporting layer that converts validated analytical outputs into a concise management summary.
@@ -180,12 +214,15 @@ The AI component is intentionally used as a reporting layer rather than as the s
 
 Key controls include:
 
-- Only validated market and location outputs are provided to the AI
+- Only validated market and location outputs are provided to the reporting layer
 - The prompt explicitly prevents invented calculations and causal claims
 - Market and pedestrian evidence are treated as independent evidence streams
-- The AI is instructed not to make direct store-opening recommendations
-- Automated checks verify required sections, wording constraints and selected numeric values
-- A fallback management summary is available if the API call is unavailable
+- Direct store-opening recommendations are prohibited
+- Selected numeric values are checked directly against validated analytical tables
+- Wording guardrails detect unsupported store-opening recommendation language
+- A deliberately unsafe summary is used to confirm that the guardrail can fail as expected
+- The summary source is recorded so it is clear whether the output came from the OpenAI API or the fallback workflow
+- A fallback management summary is used when the API is unavailable
 
 This approach demonstrates how generative AI can support analytics communication while keeping the underlying calculations deterministic and auditable.
 
@@ -209,3 +246,4 @@ Melbourne, Australia
 Interested in Data Analytics, Business Intelligence, Data Engineering and AI-enabled analytics.
 
 Connect with me on LinkedIn: [linkedin.com/in/devika-jayaraj](https://www.linkedin.com/in/devika-jayaraj)
+```
