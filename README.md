@@ -2,7 +2,7 @@
 
 RetailPulse AI is an end-to-end retail decision-intelligence project combining Australian household spending data with Melbourne pedestrian activity to identify market signals and priority locations for further commercial investigation.
 
-## Executive Summary
+## Summary
 
 - **Clothing and footwear, Food, and Miscellaneous goods and services** were identified as the strongest **High Priority market categories** in the latest reporting period.
 - **Little Collins St-Swanston St (East)** was one of the strongest High Priority location signals, combining approximately **643,499 monthly pedestrian movements** with **20.55% validated YoY growth**.
@@ -17,6 +17,18 @@ The project covers:
 - Decision-priority scoring
 - Tableau-ready datasets and dashboards
 - AI-assisted management reporting with validation guardrails
+
+## Contents
+
+- [Dashboard Preview](#dashboard-preview)
+- [Business Question](#business-question)
+- [Data Sources](#data-sources)
+- [Project Workflow](#project-workflow)
+- [Key Features](#key-features)
+- [Key Findings](#key-findings)
+- [AI-Assisted Reporting & Validation](#ai-assisted-reporting--validation)
+- [Limitations](#limitations)
+- [How to Run the Project](#how-to-run-the-project)
 
 ## Dashboard Preview
 
