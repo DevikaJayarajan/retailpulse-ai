@@ -92,8 +92,14 @@ retailpulse-ai/
 │   └── retailpulse_ai_analysis.ipynb
 ├── reports/
 │   ├── ai_management_summary.txt
-│   └── ai_validation_results.csv
-└── README.md
+│   ├── ai_validation_results.csv
+│   └── ai_guardrail_test_results.csv
+├── tableau/
+│   ├── market_overview.png
+│   ├── location_intelligence.png
+│   └── decision_intelligence.png
+├── README.md
+└── requirements.txt
 ```
 ## Project Outputs
 
