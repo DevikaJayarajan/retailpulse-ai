@@ -32,11 +32,13 @@ The project covers:
 
 ## Dashboard Preview
 
-## Interactive Dashboard
+## Interactive Dashboards
 
-View the interactive Tableau dashboard on Tableau Public:
+Explore the RetailPulse AI dashboards on Tableau Public:
 
-[View RetailPulse AI - Retail Decision Intelligence](https://public.tableau.com/app/profile/devika.jayaraj/viz/RetailPulseAI-RetailDecisionIntelligence/Dashboard1)
+- [Market Overview](https://public.tableau.com/app/profile/devika.jayaraj/viz/RetailPulseAI-RetailDecisionIntelligence/Dashboard1)
+- [Location Intelligence](https://public.tableau.com/app/profile/devika.jayaraj/viz/RetailPulseAI-RetailDecisionIntelligence/Dashboard2)
+- [Decision Intelligence](https://public.tableau.com/app/profile/devika.jayaraj/viz/RetailPulseAI-RetailDecisionIntelligence/Dashboard3)
 
 ### Market Overview
 
