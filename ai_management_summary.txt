@@ -1,4 +1,4 @@
-Summary source: Demo fallback summary
+Summary source: Fallback summary - API unavailable
 
 
 1. Market signals
