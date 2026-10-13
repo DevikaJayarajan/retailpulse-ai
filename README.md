@@ -60,17 +60,19 @@ This project uses publicly available Australian government and City of Melbourne
 
 ### Australian Bureau of Statistics
 
-- Monthly Household Spending Indicator — Australia
-- Monthly Household Spending Indicator — Victoria
+- [Monthly Household Spending Indicator](https://www.abs.gov.au/statistics/economy/finance/monthly-household-spending-indicator) — Australian Bureau of Statistics
+- Australia and Victoria household spending data cubes were used to analyse category-level spending trends, growth rates and Victoria's performance relative to Australia.
 
-These datasets are used to analyse household spending trends, growth rates and Victoria's performance relative to Australia.
+Source credit: **Australian Bureau of Statistics (ABS), Monthly Household Spending Indicator.**
 
 ### City of Melbourne
 
-- Pedestrian Counting System — Monthly Counts per Hour
-- Pedestrian Counting System — Sensor Locations
+- [Pedestrian Counting System (counts per hour)](https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-monthly-counts-per-hour/) — City of Melbourne Open Data
+- [Pedestrian Counting System - Sensor Locations](https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-sensor-locations/) — City of Melbourne Open Data
 
-These datasets are used to analyse pedestrian activity, location-level growth, footfall volume and weekday/weekend patterns.
+These datasets were used to analyse pedestrian activity, location-level growth, footfall volume and sensor metadata.
+
+Source credit: **City of Melbourne Open Data, Pedestrian Counting System.**
 
 > Note: The raw hourly pedestrian counts file is approximately 120 MB and is not stored in this GitHub repository. The processed datasets used in the analysis are included in `data/processed/`.
 
