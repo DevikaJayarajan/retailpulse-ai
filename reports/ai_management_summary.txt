@@ -2,7 +2,7 @@ Summary source: Fallback summary - API unavailable
 
 
 1. Market signals
-Clothing and footwear, food, and miscellaneous goods and services are the strongest market signals, each classified as High Priority. Victoria recorded YoY growth of 6.70% for clothing and footwear, 6.50% for food, and 8.06% for miscellaneous goods and services. Clothing and footwear also recorded a small positive gap versus Australia of 0.24 percentage points. Alcoholic beverages and tobacco is the weakest category, with Victoria YoY spending down 4.79% and an 8.53 percentage point negative gap versus Australia.
+Clothing and footwear, food, and miscellaneous goods and services are the strongest market signals, each classified as High Priority. Victoria recorded YoY growth of 6.70% for clothing and footwear, 6.50% for food, and 8.06% for miscellaneous goods and services. Clothing and footwear also recorded a small positive gap versus Australia of 0.24 percentage points. Alcoholic beverages and tobacco is the weakest category, with Victoria YoY spending down -4.79% and an 8.53 percentage point negative gap versus Australia.
 
 2. Location signals
 Little Collins St-Swanston St (East), Collins Street (North), and iHub 489 Elizabeth Street are the strongest High Priority location signals. Little Collins St-Swanston St (East) recorded 643,499 monthly pedestrian movements and 20.55% validated YoY growth. Collins Street (North) recorded 457,819 movements and 16.39% growth, while iHub 489 Elizabeth Street recorded 417,526 movements and 10.31% growth. Several Medium Priority locations also showed strong growth, including 231 Bourke St at 27.95%.
