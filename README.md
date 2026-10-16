@@ -243,6 +243,8 @@ The project includes an AI-assisted reporting layer that converts validated anal
 
 The AI component is intentionally used as a reporting layer rather than as the source of calculations or KPI logic.
 
+The summary included in `reports/` was generated using the fallback workflow because no paid API credit was used for this project. The same validation and guardrail checks are designed to run on a live API-generated response when API access is available.
+
 Key controls include:
 
 - Only validated market and location outputs are provided to the reporting layer
