@@ -21,7 +21,7 @@ The project covers:
 
 ## Contents
 
-- [Executive Summary](#executive-summary)
+- [Summary](#summary)
 - [Interactive Dashboards](#interactive-dashboards)
 - [Dashboard Preview](#dashboard-preview)
 - [Business Question](#business-question)
